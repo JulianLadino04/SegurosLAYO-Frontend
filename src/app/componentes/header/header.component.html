@@ -62,7 +62,7 @@
               }
             </div>
             @if (!isLogged) {
-            <button type="button" routerLink="/signin" class="btn-outline me-2">Ingresar</button>
+            <button (click)="toggleMenu()" type="button" routerLink="/signin" class="btn-outline me-2">Ingresar</button>
             } @else {
             <a class="nav-link-dark black active" (click)="toggleMenu()" routerLink="/perfil">Perfil</a>
             <button type="button" (click)="logout()" class="btn-menu">Logout</button>
